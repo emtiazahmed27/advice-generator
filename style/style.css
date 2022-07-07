@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700;800&family=Outfit:wght@300;400;600&family=Play:wght@400;700&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Manrope";
+  font-weight: 800;
+  color: hsl(193deg, 38%, 86%);
+  text-align: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218deg, 23%, 16%);
+}
+body .container {
+  width: min(22em, 90%);
+  height: min(15em, 60%);
+  background-color: hsl(217deg, 19%, 24%);
+  border-radius: 0.5em;
+  padding: 2em;
+  position: relative;
+}
+body .container .advice-id {
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(150deg, 100%, 66%);
+}
+body .container .advice-section {
+  margin: 2em 0em 0em;
+}
+body .container .linebar {
+  width: 90%;
+  height: 0.1px;
+  background-color: hsl(193deg, 38%, 86%);
+  position: absolute;
+  top: 77%;
+  left: 5%;
+}
+body .container .linebar::after {
+  position: absolute;
+  top: -11px;
+  left: calc(50% - 12.5px);
+  content: "||";
+  width: 23px;
+  background-color: hsl(217deg, 19%, 24%);
+}
+body .container .dice-container {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: -6%;
+  left: calc(50% - 12.5px);
+  background-color: hsl(150deg, 100%, 66%);
+  border-radius: 50%;
+  padding: 3px 0px;
+  transition: box-shadow 0.6s ease-in-out;
+}
+body .container .dice-container img {
+  width: 18px;
+}
+body .container .dice-container:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 30px 10px hsl(150deg, 100%, 66%);
+}/*# sourceMappingURL=style.css.map */
